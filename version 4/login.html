@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<style>
+    form {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<form id="loginForm">
+    <h2>Login Form</h2>
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+
+    <input type="submit" value="Login">
+</form>
+
+<script>
+    document.getElementById("loginForm").onsubmit = function(event) {
+        event.preventDefault(); // prevent form submission
+
+        // Get input values
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        // Perform validation
+        if (username === "" || password === "") {
+            alert("Please fill in all fields.");
+            return false; // prevent further processing
+        }
+        
+        // You can add further validation logic here, such as checking against a database
+
+        // If everything is okay, you can proceed with login
+        alert("Login successful!"); // Replace this with actual login logic
+        // For demonstration purpose, let's redirect to a welcome page
+        window.location.href = "p.html"; // Redirect to welcome page
+    };
+</script>
+
+</body>
+</html>

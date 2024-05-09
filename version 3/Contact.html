@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-nEzE+g6zllLcmgM0z2ZLNa/Z6+qgiCv8dHuA+22Vrnn94GK61tpjQLQT4BydUJu9TSpkMvkOeV+rdjglvzW6UQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            background-color: #fff;
+            border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%  ;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .btn-submit {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn-submit:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5 contact-container">
+        <h2 class="contact-title">Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-submit" onclick="sub()" >Submit</button>
+        </form>
+       
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-gpZj4wvlP/b7sSCj6vxo/FIjJh0M4GjsjM25A7/ij9vsNcHsSQyzcL2rP7Ft2+V0NlUxdX5NQZ6bqXdGr92tnw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
+</body>
+</html>
